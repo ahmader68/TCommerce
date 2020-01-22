@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+
+    <Button
+        android:id="@+id/btn_rvProductBasket_removeProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/Red"
+        android:text="@string/remove_from_basket"
+        android:textColor="@color/White"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_rvProductBasket_finalPriceTitle" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_totalPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_price"
+        android:textColor="@color/black_overlay"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/cv_rvProductBasket_productDetails"
+        app:layout_constraintTop_toBottomOf="@id/cv_rvProductBasket_productDetails" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8sp"
+        android:textColor="@color/black_overlay"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_totalPriceTitle"
+        app:layout_constraintEnd_toStartOf="@id/txt_rvProductBasket_tomanTotal"
+        app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_totalPriceTitle"
+        tools:text="7500000" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_tomanTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/toman"
+        android:textColor="@color/black_overlay"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_totalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_totalPrice" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_discountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/discounts_dot"
+        android:textColor="@color/Red"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/txt_rvProductBasket_totalPriceTitle"
+        app:layout_constraintStart_toStartOf="@id/txt_rvProductBasket_totalPriceTitle"
+        app:layout_constraintTop_toBottomOf="@id/txt_rvProductBasket_totalPriceTitle" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_tomanDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/toman"
+        android:textColor="@color/Red"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_discount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_rvProductBasket_discount"
+        app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_discount" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/Red"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_discountTitle"
+        app:layout_constraintEnd_toStartOf="@id/txt_rvProductBasket_tomanDiscount"
+        app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_discountTitle"
+        tools:text="5200000" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_finalPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/final_price"
+        android:textColor="@color/Green"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_rvProductBasket_line1" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_finalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/Green"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_finalPriceTitle"
+        app:layout_constraintEnd_toStartOf="@id/txt_rvProductBasket_finalToman"
+        app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_finalPriceTitle"
+        tools:text="850000" />
+
+    <TextView
+        android:id="@+id/txt_rvProductBasket_finalToman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/toman"
+        android:textColor="@color/Green"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_finalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_rvProductBasket_finalPrice"
+        app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_finalPrice" />
+
+    <View
+        android:id="@+id/view_rvProductBasket_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black_overlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_rvProductBasket_discount" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_rvProductBasket_productDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_rvProductBasket_product"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/baner1" />
+
+            <Spinner
+                android:id="@+id/sp_rvProductBasket_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_countTitle"
+                app:layout_constraintStart_toEndOf="@id/txt_rvProductBasket_countTitle"
+                app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_countTitle" />
+
+            <TextView
+                android:id="@+id/txt_rvProductBasket_productDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black_overlay"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/txt_rvProductBasket_productName"
+                app:layout_constraintStart_toStartOf="@id/txt_rvProductBasket_productName"
+                app:layout_constraintTop_toBottomOf="@id/txt_rvProductBasket_productName"
+                tools:text="سرویس پخت و پز 12 پارچه دسینی مدل Modica R" />
+
+            <TextView
+                android:id="@+id/txt_rvProductBasket_colorTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/color_dot"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/txt_rvProductBasket_productDetails"
+                app:layout_constraintTop_toBottomOf="@id/txt_rvProductBasket_productDetails" />
+
+            <TextView
+                android:id="@+id/txt_rvProductBasket_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black_overlay"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_colorTitle"
+                app:layout_constraintStart_toEndOf="@id/txt_rvProductBasket_colorTitle"
+                app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_colorTitle"
+                tools:text="زرشکی" />
+
+            <TextView
+                android:id="@+id/txt_rvProductBasket_guaranteeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/txt_rvProductBasket_colorTitle"
+                app:layout_constraintTop_toBottomOf="@id/txt_rvProductBasket_colorTitle"
+                android:text="@string/guarantee" />
+
+            <TextView
+                android:id="@+id/txt_rvProductBasket_guarantee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black_overlay"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_rvProductBasket_guaranteeTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txt_rvProductBasket_guaranteeTitle"
+                app:layout_constraintTop_toTopOf="@id/txt_rvProductBasket_guaranteeTitle"
+                tools:text="گارانتی اصالت و سلامت فیزیکی کالا" />
+
+            <TextView
+                android:id="@+id/txt_rvProductBasket_countTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/count"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/txt_rvProductBasket_guaranteeTitle"
+                app:layout_constraintTop_toBottomOf="@id/txt_rvProductBasket_guaranteeTitle" />
+
+            <TextView
+                android:id="@+id/txt_rvProductBasket_productName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_rvProductBasket_product"
+                app:layout_constraintTop_toTopOf="@id/img_rvProductBasket_product"
+                tools:text="Dessini Modica R Cookware Set 12PCs" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

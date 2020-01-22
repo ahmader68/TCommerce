@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_fragmentProfile_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                tools:text="هومن هوشیاز"/>
+            <View
+                android:id="@+id/view_fragmentProfile_line1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_fragmentProfile_fullName"
+                app:layout_constraintStart_toStartOf="@id/txt_fragmentProfile_fullName"
+                app:layout_constraintEnd_toEndOf="@id/txt_fragmentProfile_fullName"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line1"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line1"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line1"
+
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_cart_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5"
+                    android:text="@string/my_profile"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearProfile"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearProfile"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearProfile"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearChangePass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line2"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line2"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line2"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_change_pass_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmChangePass"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line3"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearChangePass"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearChangePass"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearChangePass"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearMyAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line3"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line3"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_address_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_address"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line4"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearMyAddress"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearMyAddress"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearMyAddress"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line4"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line4"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line4"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_history_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_order"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line5"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearHistoryOrder"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearHistoryOrder"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearHistoryOrder"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearDownloads"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line5"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line5"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line5"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_download_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/downloads"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line6"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearDownloads"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearDownloads"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearDownloads"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearFavourite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line6"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line6"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line6"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_favorite_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/favourites"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line7"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearFavourite"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearFavourite"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearFavourite"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearTransactions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line7"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line7"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line7"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_cost_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transactions"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line8"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearTransactions"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearTransactions"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearTransactions"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearMyDiscounts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line8"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line8"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line8"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_offer_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_discounts"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line9"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearMyDiscounts"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearMyDiscounts"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearMyDiscounts"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearMessages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line9"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line9"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line9"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_messeage_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/messages"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line10"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearMessages"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearMessages"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearMessages"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line10"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line10"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line10"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_about_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_support"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line11"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearContact"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearContact"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearContact"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fragmentProfile_linearExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_fragmentProfile_line11"
+                app:layout_constraintStart_toStartOf="@id/view_fragmentProfile_line11"
+                app:layout_constraintEnd_toEndOf="@id/view_fragmentProfile_line11"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile_exit_icon" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exit"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fragmentProfile_line12"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/linear_fragmentProfile_linearExit"
+                app:layout_constraintStart_toStartOf="@id/linear_fragmentProfile_linearExit"
+                app:layout_constraintEnd_toEndOf="@id/linear_fragmentProfile_linearExit"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
